@@ -1,3 +1,4 @@
+/*
 package com.config;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +13,9 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 @Configuration
-@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 1800) /* 세션 만료 시간 : 600초 */
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 1800) */
+/* 세션 만료 시간 : 600초 *//*
+
 public class RedisSessionConfig {
     @Value("${spring.redis.host}")
     public String host;
@@ -37,4 +40,4 @@ public class RedisSessionConfig {
         configuration.setPort(port);
         return new LettuceConnectionFactory(configuration);
     }
-}
+}*/
